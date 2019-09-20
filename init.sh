@@ -2,8 +2,8 @@
 sudo rm -r /etc/nginx/sites-enabled/default
 sudo ln -s /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
 #sudo service nginx stop
-#sudo /etc/init.d/nginx restart
-sudo nginx -c /etc/nginx/sites-enabled/test.conf
+sudo /etc/init.d/nginx restart
+#sudo nginx -c /etc/nginx/sites-enabled/test.conf
 
 # settings for gunicorn
 sudo ln -sf /home/box/web/etc/gunicorn.conf /etc/gunicorn.d/gunicorn.py
