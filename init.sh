@@ -6,10 +6,11 @@ sudo nginx -c /etc/nginx/sites-enabled/test.conf
 #sudo /etc/init.d/nginx restart
 
 # settings for gunicorn
-sudo ln -s /home/box/web/etc/gunicorn.py /etc/gunicorn.d/hello.py
+# sudo ln -s /home/box/web/etc/gunicorn.py /etc/gunicorn.d/hello.py
 cd /home/box/web
 sudo gunicorn -c /home/box/web/etc/gunicorn.py hello:application
-sudo gunicorn -c /home/box/web/etc/gunicorn_ask.py ask.ask.wsgi:application
+cd ask
+sudo gunicorn -c /home/box/web/etc/gunicorn_ask.py ask.wsgi:application
 
 # settings for mysql
 #sudo /etc/init.d/mysql start
