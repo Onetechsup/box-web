@@ -17,11 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path(r'^login/', include('qa.urls')),
-    path(r'^signup/', include('qa.urls')),
-    path(r'^question/', include('qa.urls')),
-    path(r'^ask/', include('qa.urls')),
-    path(r'^popular/', include('qa.urls')),
-    path(r'^new/', include('qa.urls')),
-    path(r'^$', include('qa.urls')),
+    path(r'^login/', 'qa.views.test'),
+    path(r'^signup/', 'qa.views.test'),
+    path(r'^question/(?P<num>\d+)/$', 'qa.views.test'),
+    path(r'^ask/', 'qa.views.test'),
+    path(r'^popular/', 'qa.views.test'),
+    path(r'^new/', 'qa.views.test'),
+    path(r'^$', 'qa.views.test'),
 ]
