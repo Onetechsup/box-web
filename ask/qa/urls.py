@@ -17,5 +17,5 @@ from django.urls import path
 from qa.views import test
 
 urlpatterns = [
-    url(r'^', test),
+    path(r'^', test),
 ]
