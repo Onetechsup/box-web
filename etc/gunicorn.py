@@ -1,6 +1,3 @@
-bind = '0.0.0.0:8080'
-
-'''
 CONFIG = {
     'mode': 'wsgi',
     'working_dir': '/home/box/web',
@@ -13,4 +10,3 @@ CONFIG = {
         'hello:application',
     )
 }
-'''

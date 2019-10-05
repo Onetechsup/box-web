@@ -17,10 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path(r'^question/', include('qa.urls')),
-]
-
-'''
     path(r'^login/', include('qa.urls')),
     path(r'^signup/', include('qa.urls')),
     path(r'^question/', include('qa.urls')),
@@ -28,4 +24,4 @@ urlpatterns = [
     path(r'^popular/', include('qa.urls')),
     path(r'^new/', include('qa.urls')),
     path(r'^$', include('qa.urls')),
-'''
+]

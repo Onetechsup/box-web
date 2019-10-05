@@ -17,5 +17,5 @@ from django.urls import path
 from qa.views import test
 
 urlpatterns = [
-    url(r'^(?P<num>\d+)/$', test),
+    url(r'^', test),
 ]
