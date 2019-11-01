@@ -1,7 +1,7 @@
 # settings for nginx
 sudo rm -r /etc/nginx/sites-enabled/default
 sudo ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
-sudo service nginx stop
+#sudo service nginx stop
 sudo nginx -c /etc/nginx/sites-enabled/test.conf
 #sudo /etc/init.d/nginx restart
 
